@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>曼波 · 实时 3D 数字人</title>
+<link rel="stylesheet" href="style.css">
+<style>.wave i{height:36px;transform:scaleY(.11)}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/","@pixiv/three-vrm":"./node_modules/@pixiv/three-vrm/lib/three-vrm.module.js"}}</script>
+<main>
+  <section id="stage"><div class="halo"></div><canvas id="avatar"></canvas>
+    <header><span class="brand">QPI <b>AI</b></span><span class="tag">REALTIME 3D · 模型驱动原型</span></header>
+    <div class="name"><small>YOUR AI COMPANION</small><h1>曼波<span> / MAMBO</span></h1><p>很高兴见到你</p></div>
+    <div id="caption">正在加载 3D 角色…</div>
+  </section>
+  <aside><div class="eyebrow">LIVE CONVERSATION</div><h2>欢迎，和我聊聊</h2>
+    <div id="status">正在连接</div><div class="wave" id="wave"></div>
+    <label>你说</label><p id="question">向我打个招呼吧</p>
+    <label>曼波</label><p id="answer">我在这里，准备好与你交流。</p>
+    <footer><span id="metrics">加载中</span><p>3D TEST MODEL © 2022 pixiv Inc.</p><button id="preview">无声动作预览</button></footer>
+  </aside>
+</main>
+<script type="module" src="app.js"></script>
+</html>

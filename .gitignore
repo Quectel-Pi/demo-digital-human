@@ -1,0 +1,16 @@
+# 编译产物
+c/build/
+c/demo030_voice
+
+# 云端 SDK 源码不随仓库分发，防止意外加入
+c/third_party/
+
+# 运行产物
+*.log
+c/firefox-profile/
+c/qth_config.bin
+c/qth_config_BAK.bin
+
+# 说明：c/web/node_modules 是**刻意提交**的。
+# 板上离线运行、不装 npm，index.html 的 importmap 直接指向该目录。
+# 若改成忽略，部署前需先执行 cd c/web && npm install。

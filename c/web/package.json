@@ -1,0 +1,6 @@
+{
+  "name": "demo030-avatar-view",
+  "private": true,
+  "type": "module",
+  "dependencies": { "three": "0.180.0", "@pixiv/three-vrm": "3.4.4" }
+}
